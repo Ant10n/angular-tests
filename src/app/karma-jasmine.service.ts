@@ -1,11 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class KarmaJasmineService {
-
-  constructor() { }
+  constructor() {}
 
   sumar(a: number, b: number): number {
     return a + b;
@@ -24,9 +23,13 @@ export class KarmaJasmineService {
   }
   // Función para verificar si un número es par
   par(a: number): boolean {
-    if (a %2 ==0)
-    return true;
+    if (a % 2 == 0) return true;
   }
-// Función para verificar si una cadena es un palíndromo
-// Función para calcular el factorial de un número
+  // Función para verificar si una cadena es un palíndromo
+
+  palindromo(cadena: string): boolean {
+    return cadena === cadena.split("").reverse().join("");
+  }
+
+  // Función para calcular el factorial de un número
 }
