@@ -126,6 +126,26 @@ describe("KarmaJasmineService", () => {
     const resultado = service.numeroDeElementosDeUnArray([1,2,3]);
     expect(resultado).toBe(3);
   });
+  it("debería comprobar la cantidad e elementos de un array", ()=> {
+    const resultado = service.numeroDeElementosDeUnArray([1,2,3,2,1]);
+    expect(resultado).toBe(5);
+  });
+  it("debería comprobar la cantidad e elementos de un array", ()=> {
+    const resultado = service.numeroDeElementosDeUnArray([9,3]);
+    expect(resultado).toBe(2);
+  });
+  it("debería comprobar que una cadena incluye una subcadena", () => {
+    const resultado = service.stringContieneSubstring("hola buenos días", "buen");
+    expect(resultado).toBeTruthy;
+  });
+  it("debería comprobar que una cadena incluye una subcadena", () => {
+    const resultado = service.stringContieneSubstring("hola buenos días", "Patata");
+    expect(resultado).toBeFalsy;
+  });
+  it("debería comprobar que una cadena incluye una subcadena", () => {
+    const resultado = service.stringContieneSubstring("hola buenos días", "bune");
+    expect(resultado).toBeFalsy;
+  });
   
   
 
