@@ -43,4 +43,14 @@ export class KarmaJasmineService {
       return factorial;
     }
   }
+//   Función para verificar si un número es positivo
+positivo(numero: number): boolean{
+  if(numero >0 ) return true;
+}
+// Función para obtener el número de elementos en un array
+numeroDeElementosDeUnArray(array: []): number{
+  return array.length;
+}
+}
+// Función para verificar si una cadena contiene un substring
 }

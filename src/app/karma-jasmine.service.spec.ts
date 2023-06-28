@@ -110,5 +110,19 @@ describe("KarmaJasmineService", () => {
     const resultado = service.factorial(8);
     expect(resultado).toBe(40320);
   });
+  it("debería comprobar si un numero es positivo", () => {
+    const resultado = service.positivo(8);
+    expect(resultado).toBeTruthy;
+  });
+  it("debería comprobar si un numero es positivo", () => {
+    const resultado = service.positivo(-3);
+    expect(resultado).toBeFalsy;
+  });
+  it("debería comprobar si un numero es positivo", () => {
+    const resultado = service.positivo(0);
+    expect(resultado).toBeFalsy;
+  });
+  
+  
 
 });
