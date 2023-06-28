@@ -22,4 +22,10 @@ export class KarmaJasmineService {
   dividir(a: number, b: number): number {
     return a / b;
   }
+  // Función para verificar si un número es par
+  par(a: number): void {
+    if (a %2 ==0);
+  }
+// Función para verificar si una cadena es un palíndromo
+// Función para calcular el factorial de un número
 }

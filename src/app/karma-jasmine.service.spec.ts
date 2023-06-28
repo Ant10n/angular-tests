@@ -71,6 +71,18 @@ describe('KarmaJasmineService', () => {
     const resultado = service.dividir(10, -5);
     expect(resultado).toBe(-2);
   });
+  it('debería comprobar si un número es par', () => {
+    const resultado = service.par(10);
+    expect(resultado).toBeTruthy;
+  });
+  it('debería comprobar si un número es par', () => {
+    const resultado = service.par(8);
+    expect(resultado).toBeTruthy;
+  });
+  it('debería comprobar si un número es par', () => {
+    const resultado = service.par(2);
+    expect(resultado).toBeTruthy;
+  });
   
 
 });
