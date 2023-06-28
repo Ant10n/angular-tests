@@ -23,7 +23,7 @@ export class KarmaJasmineService {
   }
   // Función para verificar si un número es par
   par(a: number): boolean {
-    if (a % 2 == 0) return true;
+    return a % 2 === 0;
   }
   // Función para verificar si una cadena es un palíndromo
 
