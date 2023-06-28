@@ -122,6 +122,10 @@ describe("KarmaJasmineService", () => {
     const resultado = service.positivo(0);
     expect(resultado).toBeFalsy;
   });
+  it("debería comprobar la cantidad e elementos de un array", ()=> {
+    const resultado = service.numeroDeElementosDeUnArray([1,2,3]);
+    expect(resultado).toBe(3);
+  });
   
   
 

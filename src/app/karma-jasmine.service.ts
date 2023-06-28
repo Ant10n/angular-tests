@@ -48,9 +48,13 @@ positivo(numero: number): boolean{
   if(numero >0 ) return true;
 }
 // Función para obtener el número de elementos en un array
-numeroDeElementosDeUnArray(array: []): number{
+numeroDeElementosDeUnArray(array: [any]): number{
   return array.length;
 }
-}
+
 // Función para verificar si una cadena contiene un substring
+stringContieneSubstring(cadena: string, subcadena: string): boolean {
+  return cadena.includes(subcadena);
+}
+
 }
