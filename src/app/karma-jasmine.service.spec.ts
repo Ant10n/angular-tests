@@ -98,5 +98,17 @@ describe("KarmaJasmineService", () => {
     const resultado = service.palindromo("reconocer");
     expect(resultado).toBeTruthy;
   });
-  
+  it("debería comprobar si un numero es factorial", () => {
+    const resultado = service.factorial(5);
+    expect(resultado).toBe(120);
+  });
+  it("debería comprobar si un numero es factorial", () => {
+    const resultado = service.factorial(10);
+    expect(resultado).toBe(3628800);
+  });
+  it("debería comprobar si un numero es factorial", () => {
+    const resultado = service.factorial(8);
+    expect(resultado).toBe(40320);
+  });
+
 });
